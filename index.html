@@ -150,26 +150,24 @@
     <article id="post-快速转化年月日&amp;两位小数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/10/快速转化年月日&两位小数/">转年月日&amp;两位小数</a>
-    </h1>
-  
-
-        
-        <a href="/2017/07/10/快速转化年月日&两位小数/" class="archive-article-date">
-  	<time datetime="2017-07-10T03:12:10.621Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-10</time>
-</a>
-        
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>年月日时分秒
-</code></pre><p>   function timeControl(time){<br>            var date = new Date(time);<br>            Y = date.getFullYear() + ‘-‘;<br>            M = (date.getMonth()+1 &lt; 10 ? ‘0’+(date.getMonth()+1) : date.getMonth()+1) + ‘-‘;<br>            D = date.getDate() + ‘ ‘;<br>            h = (date.getHours()+1 &lt;10 ?’0’ + date.getHours():date.getHours())+’:’;<br>            m = (date.getMinutes()+1&lt;10?’0’ + date.getMinutes():date.getMinutes())+’:’;<br>            s = (date.getSeconds()+1&lt;10?’0’+date.getSeconds():date.getSeconds());<br>            timeCon = Y+M+D+h+m+s;<br>            return timeCon;<br>        }<br>    两位小数</p>
-
+        <h3 id=""><a href="#" class="headerlink" title=" "></a> </h3><h2 id="快速转化年月日-amp-两位小数"><a href="#快速转化年月日-amp-两位小数" class="headerlink" title="快速转化年月日&amp;两位小数"></a>快速转化年月日&amp;两位小数</h2><pre><code>function timeControl(time){
+    var date = new Date(time);
+            Y = date.getFullYear() + &apos;-&apos;;
+            M = (date.getMonth()+1 &lt; 10 ? &apos;0&apos;+(date.getMonth()+1) : date.getMonth()+1) + &apos;-&apos;;
+            D = date.getDate() + &apos; &apos;;
+            h = (date.getHours()+1 &lt;10 ?&apos;0&apos; + date.getHours():date.getHours())+&apos;:&apos;;      
+            m = (date.getMinutes()+1&lt;10?&apos;0&apos; + date.getMinutes():date.getMinutes())+&apos;:&apos;;
+            s = (date.getSeconds()+1&lt;10?&apos;0&apos;+date.getSeconds():date.getSeconds());
+            timeCon = Y+M+D+h+m+s;
+            return timeCon;
+        }
+两位小数
+</code></pre>
+        
+          <a class="article-more-a" href="/2017/07/10/快速转化年月日&两位小数/#more">more >></a>
+        
       
 
       
