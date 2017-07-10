@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zhangfanglan55555.github.io">
-  <title>张芳兰的博客</title>
+  <title>快速转化年月日&amp;两位小数 | 张芳兰的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="快速转化年月日&amp;amp;两位小数function timeControl(time){     var date = new Date(time);             Y = date.getFullYear() + &amp;apos;-&amp;apos;;             M = (date.getMonth()+1 &amp;lt; 10 ? &amp;apos;0&amp;apos;+(date.getMont">
+  <meta name="description" content="function timeControl(time){     var date = new Date(time);             Y = date.getFullYear() + &amp;apos;-&amp;apos;;             M = (date.getMonth()+1 &amp;lt; 10 ? &amp;apos;0&amp;apos;+(date.getMonth()+1) : date.get">
 <meta name="keywords" content="前端,js,jquery,javascript,html5,小程序,开发者,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="article">
-<meta property="og:title" content="张芳兰的博客">
+<meta property="og:title" content="快速转化年月日&amp;两位小数">
 <meta property="og:url" content="https://zhangfanglan55555.github.io/2017/07/10/快速转化年月日&两位小数/index.html">
 <meta property="og:site_name" content="张芳兰的博客">
-<meta property="og:description" content="快速转化年月日&amp;amp;两位小数function timeControl(time){     var date = new Date(time);             Y = date.getFullYear() + &amp;apos;-&amp;apos;;             M = (date.getMonth()+1 &amp;lt; 10 ? &amp;apos;0&amp;apos;+(date.getMont">
-<meta property="og:updated_time" content="2017-07-10T09:02:57.456Z">
+<meta property="og:description" content="function timeControl(time){     var date = new Date(time);             Y = date.getFullYear() + &amp;apos;-&amp;apos;;             M = (date.getMonth()+1 &amp;lt; 10 ? &amp;apos;0&amp;apos;+(date.getMonth()+1) : date.get">
+<meta property="og:updated_time" content="2017-07-10T09:27:11.310Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="张芳兰的博客">
-<meta name="twitter:description" content="快速转化年月日&amp;amp;两位小数function timeControl(time){     var date = new Date(time);             Y = date.getFullYear() + &amp;apos;-&amp;apos;;             M = (date.getMonth()+1 &amp;lt; 10 ? &amp;apos;0&amp;apos;+(date.getMont">
+<meta name="twitter:title" content="快速转化年月日&amp;两位小数">
+<meta name="twitter:description" content="function timeControl(time){     var date = new Date(time);             Y = date.getFullYear() + &amp;apos;-&amp;apos;;             M = (date.getMonth()+1 &amp;lt; 10 ? &amp;apos;0&amp;apos;+(date.getMonth()+1) : date.get">
   
   
     <link rel="icon" href="/favicon.png">
@@ -149,9 +149,24 @@
             <article id="post-快速转化年月日&amp;两位小数" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      快速转化年月日&amp;两位小数
+    </h1>
+  
+
+        
+        <a href="/2017/07/10/快速转化年月日&两位小数/" class="archive-article-date">
+  	<time datetime="2017-07-10T03:12:10.621Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-10</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id=""><a href="#" class="headerlink" title=" "></a> </h3><h2 id="快速转化年月日-amp-两位小数"><a href="#快速转化年月日-amp-两位小数" class="headerlink" title="快速转化年月日&amp;两位小数"></a>快速转化年月日&amp;两位小数</h2><pre><code>function timeControl(time){
+        <pre><code>function timeControl(time){
     var date = new Date(time);
             Y = date.getFullYear() + &apos;-&apos;;
             M = (date.getMonth()+1 &lt; 10 ? &apos;0&apos;+(date.getMonth()+1) : date.getMonth()+1) + &apos;-&apos;;
@@ -184,8 +199,7 @@ function getFloatStr(num){
         num += &apos;00&apos;;        //在字符串末尾补零
         num = num.match(/\d+\.\d{2}/)[0];
         return num;
-
-    },
+    }
 </code></pre>
       
 
@@ -278,6 +292,15 @@ function getFloatStr(num){
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/07/10/cookie和session的区别/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          cookie 和 session的区别
+        
+      </div>
+    </a>
   
   
     <a href="/2017/07/10/取整/" id="article-nav-older" class="article-nav-link-wrap">

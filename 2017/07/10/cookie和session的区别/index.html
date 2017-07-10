@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zhangfanglan55555.github.io">
-  <title>张芳兰的博客</title>
+  <title>cookie 和 session的区别 | 张芳兰的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="就职于国美互联网，前端开发。">
+  <meta name="description" content="cookie保存在客户端，session保存在服务器端， cookie目的可以跟踪会话，也可以保存用户喜好或者保存用户名密码 session用来跟踪会话">
 <meta name="keywords" content="前端,js,jquery,javascript,html5,小程序,开发者,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="张芳兰的博客">
-<meta property="og:url" content="https://zhangfanglan55555.github.io/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cookie 和 session的区别">
+<meta property="og:url" content="https://zhangfanglan55555.github.io/2017/07/10/cookie和session的区别/index.html">
 <meta property="og:site_name" content="张芳兰的博客">
-<meta property="og:description" content="就职于国美互联网，前端开发。">
+<meta property="og:description" content="cookie保存在客户端，session保存在服务器端， cookie目的可以跟踪会话，也可以保存用户喜好或者保存用户名密码 session用来跟踪会话">
+<meta property="og:updated_time" content="2017-07-10T09:41:06.768Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="张芳兰的博客">
-<meta name="twitter:description" content="就职于国美互联网，前端开发。">
+<meta name="twitter:title" content="cookie 和 session的区别">
+<meta name="twitter:description" content="cookie保存在客户端，session保存在服务器端， cookie目的可以跟踪会话，也可以保存用户喜好或者保存用户名密码 session用来跟踪会话">
   
   
     <link rel="icon" href="/favicon.png">
@@ -145,16 +146,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-cookie和session的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-cookie和session的区别" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/10/cookie和session的区别/">cookie 和 session的区别</a>
+    <h1 class="article-title" itemprop="name">
+      cookie 和 session的区别
     </h1>
   
 
@@ -174,6 +173,27 @@ session用来跟踪会话
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -181,16 +201,75 @@ session用来跟踪会话
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/10/cookie和session的区别/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://zhangfanglan55555.github.io/2017/07/10/cookie和session的区别/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/07/10/快速转化年月日&两位小数/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">快速转化年月日&amp;两位小数</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -210,300 +289,12 @@ session用来跟踪会话
 
 
 
-
   
-    <article id="post-快速转化年月日&amp;两位小数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/10/快速转化年月日&两位小数/">快速转化年月日&amp;两位小数</a>
-    </h1>
   
 
-        
-        <a href="/2017/07/10/快速转化年月日&两位小数/" class="archive-article-date">
-  	<time datetime="2017-07-10T03:12:10.621Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <pre><code>function timeControl(time){
-    var date = new Date(time);
-            Y = date.getFullYear() + &apos;-&apos;;
-            M = (date.getMonth()+1 &lt; 10 ? &apos;0&apos;+(date.getMonth()+1) : date.getMonth()+1) + &apos;-&apos;;
-            D = date.getDate() + &apos; &apos;;
-            h = (date.getHours()+1 &lt;10 ?&apos;0&apos; + date.getHours():date.getHours())+&apos;:&apos;;      
-            m = (date.getMinutes()+1&lt;10?&apos;0&apos; + date.getMinutes():date.getMinutes())+&apos;:&apos;;
-            s = (date.getSeconds()+1&lt;10?&apos;0&apos;+date.getSeconds():date.getSeconds());
-            timeCon = Y+M+D+h+m+s;
-            return timeCon;
-        }
-两位小数
-</code></pre>
-        
-          <a class="article-more-a" href="/2017/07/10/快速转化年月日&两位小数/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/10/快速转化年月日&两位小数/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-取整" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/10/取整/">取整</a>
-    </h1>
   
 
-        
-        <a href="/2017/07/10/取整/" class="archive-article-date">
-  	<time datetime="2017-07-10T02:50:24.063Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <pre><code>Function.prototype.method(name,func){
-this.prototype[name] = func;
-return this;
-}
-Number.method(&apos;integer&apos;,function(){
-    return Math[this&lt;0?&apos;ceil&apos;:&apos;floor&apos;](this)
-});
-document.writeln((-10/3).interger)
-</code></pre>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/10/取整/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-多个元素绑定同一事件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/10/多个元素绑定同一事件/">多个元素绑定同一事件</a>
-    </h1>
-  
-
-        
-        <a href="/2017/07/10/多个元素绑定同一事件/" class="archive-article-date">
-  	<time datetime="2017-07-10T02:21:56.155Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <pre><code>var nodes = document.querySelectorAll(&apos;li&apos;);
-var add_the_headers = function(nodes){
-        var helper = function(i){
-            return fucntion(e){
-                alert(i)
-            }
-        }
-    }
-    var i;
-    for(i = 0;i&lt;nodes.length;i+=1){
-        nodes[i].onclick = helper(i)
-    }
-</code></pre>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/10/多个元素绑定同一事件/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-去除首尾空格" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/07/去除首尾空格/">去除首尾空格</a>
-    </h1>
-  
-
-        
-        <a href="/2017/07/07/去除首尾空格/" class="archive-article-date">
-  	<time datetime="2017-07-07T06:02:36.294Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <pre><code>去除首尾空格代码：
-    Function.prototype.method = fucntion(name.func){
-        this.prototype[name] = func;
-        return this;
-    }
-    String.medtho(&apos;trim&apos;,function(){
-        return this.replace(/^\s+|\s+$/g,&apos;&apos;);
-    })
-    document.wrtieln(&apos;&quot;&apos;+&quot; neat   &quot;.trim()+&apos;&quot;&apos;)
-</code></pre>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/07/去除首尾空格/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -526,8 +317,8 @@ var add_the_headers = function(nodes){
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
