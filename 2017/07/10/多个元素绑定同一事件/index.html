@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Arkiv: 2017 | 张芳兰的博客</title>
+  <title>多个元素绑定同一事件 | 张芳兰的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="张芳兰的博客">
-<meta property="og:url" content="https://zhangfanglan55555.github.io/archives/2017/index.html">
+  <meta name="description" content="var nodes = document.querySelectorAll(&amp;apos;li&amp;apos;); var add_the_headers = function(nodes){         var helper = function(i){             return fucntion(e){                 alert(i)             }">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多个元素绑定同一事件">
+<meta property="og:url" content="https://zhangfanglan55555.github.io/2017/07/10/多个元素绑定同一事件/index.html">
 <meta property="og:site_name" content="张芳兰的博客">
+<meta property="og:description" content="var nodes = document.querySelectorAll(&amp;apos;li&amp;apos;); var add_the_headers = function(nodes){         var helper = function(i){             return fucntion(e){                 alert(i)             }">
+<meta property="og:updated_time" content="2017-07-10T02:49:59.049Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="张芳兰的博客">
+<meta name="twitter:title" content="多个元素绑定同一事件">
+<meta name="twitter:description" content="var nodes = document.querySelectorAll(&amp;apos;li&amp;apos;); var add_the_headers = function(nodes){         var helper = function(i){             return fucntion(e){                 alert(i)             }">
   
     <link rel="alternate" href="/atom.xml" title="张芳兰的博客" type="application/atom+xml">
   
@@ -63,115 +67,72 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/07/10/快速转化年月日&两位小数/" class="archive-article-date">
-  <time datetime="2017-07-10T03:12:10.621Z" itemprop="datePublished">Jul 10</time>
+        <section id="main"><article id="post-多个元素绑定同一事件" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/10/多个元素绑定同一事件/" class="article-date">
+  <time datetime="2017-07-10T02:21:56.155Z" itemprop="datePublished">2017-07-10</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/10/快速转化年月日&两位小数/">转年月日&amp;两位小数</a>
+    <h1 class="article-title" itemprop="name">
+      多个元素绑定同一事件
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/07/10/取整/" class="archive-article-date">
-  <time datetime="2017-07-10T02:50:24.063Z" itemprop="datePublished">Jul 10</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/10/取整/">取整</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/07/10/多个元素绑定同一事件/" class="archive-article-date">
-  <time datetime="2017-07-10T02:21:56.155Z" itemprop="datePublished">Jul 10</time>
-</a>
+        <pre><code>var nodes = document.querySelectorAll(&apos;li&apos;);
+var add_the_headers = function(nodes){
+        var helper = function(i){
+            return fucntion(e){
+                alert(i)
+            }
+        }
+    }
+    var i;
+    for(i = 0;i&lt;nodes.length;i+=1){
+        nodes[i].onclick = helper(i)
+    }
+</code></pre>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/10/多个元素绑定同一事件/">多个元素绑定同一事件</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/07/07/去除首尾空格/" class="archive-article-date">
-  <time datetime="2017-07-07T06:02:36.294Z" itemprop="datePublished">Jul 7</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhangfanglan55555.github.io/2017/07/10/多个元素绑定同一事件/" data-id="cj4xqv9vo0004tcprhc7j41fp" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/07/去除首尾空格/">去除首尾空格</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/07/07/hello-world/" class="archive-article-date">
-  <time datetime="2017-07-06T16:00:00.000Z" itemprop="datePublished">Jul 7</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/07/hello-world/">第一篇</a>
-    </h1>
-  
-
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/07/10/取整/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          取整
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/07/07/去除首尾空格/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">去除首尾空格</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         

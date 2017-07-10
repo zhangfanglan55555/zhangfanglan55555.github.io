@@ -54,7 +54,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Søk"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhangfanglan55555.github.io"></form>
@@ -65,9 +65,139 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-first" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-快速转化年月日&amp;两位小数" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/07/07/first/" class="article-date">
+    <a href="/2017/07/10/快速转化年月日&两位小数/" class="article-date">
+  <time datetime="2017-07-10T03:12:10.621Z" itemprop="datePublished">2017-07-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/10/快速转化年月日&两位小数/">转年月日&amp;两位小数</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>年月日时分秒
+</code></pre><p>   function timeControl(time){<br>            var date = new Date(time);<br>            Y = date.getFullYear() + ‘-‘;<br>            M = (date.getMonth()+1 &lt; 10 ? ‘0’+(date.getMonth()+1) : date.getMonth()+1) + ‘-‘;<br>            D = date.getDate() + ‘ ‘;<br>            h = (date.getHours()+1 &lt;10 ?’0’ + date.getHours():date.getHours())+’:’;<br>            m = (date.getMinutes()+1&lt;10?’0’ + date.getMinutes():date.getMinutes())+’:’;<br>            s = (date.getSeconds()+1&lt;10?’0’+date.getSeconds():date.getSeconds());<br>            timeCon = Y+M+D+h+m+s;<br>            return timeCon;<br>        }<br>    两位小数</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhangfanglan55555.github.io/2017/07/10/快速转化年月日&两位小数/" data-id="cj4xqv9vs0005tcprtz038av1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-取整" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/10/取整/" class="article-date">
+  <time datetime="2017-07-10T02:50:24.063Z" itemprop="datePublished">2017-07-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/10/取整/">取整</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>Function.prototype.method(name,func){
+this.prototype[name] = func;
+return this;
+}
+Number.method(&apos;integer&apos;,function(){
+    return Math[this&lt;0?&apos;ceil&apos;:&apos;floor&apos;](this)
+});
+document.writeln((-10/3).interger)
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhangfanglan55555.github.io/2017/07/10/取整/" data-id="cj4xqv9vb0001tcpr8ket71pm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-多个元素绑定同一事件" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/10/多个元素绑定同一事件/" class="article-date">
+  <time datetime="2017-07-10T02:21:56.155Z" itemprop="datePublished">2017-07-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/10/多个元素绑定同一事件/">多个元素绑定同一事件</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>var nodes = document.querySelectorAll(&apos;li&apos;);
+var add_the_headers = function(nodes){
+        var helper = function(i){
+            return fucntion(e){
+                alert(i)
+            }
+        }
+    }
+    var i;
+    for(i = 0;i&lt;nodes.length;i+=1){
+        nodes[i].onclick = helper(i)
+    }
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhangfanglan55555.github.io/2017/07/10/多个元素绑定同一事件/" data-id="cj4xqv9vo0004tcprhc7j41fp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-去除首尾空格" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/07/去除首尾空格/" class="article-date">
   <time datetime="2017-07-07T06:02:36.294Z" itemprop="datePublished">2017-07-07</time>
 </a>
     
@@ -79,7 +209,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/07/first/">first</a>
+      <a class="article-title" href="/2017/07/07/去除首尾空格/">去除首尾空格</a>
     </h1>
   
 
@@ -87,12 +217,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>我在测试</p>
-
+        <pre><code>去除首尾空格代码：
+    Function.prototype.method = fucntion(name.func){
+        this.prototype[name] = func;
+        return this;
+    }
+    String.medtho(&apos;trim&apos;,function(){
+        return this.replace(/^\s+|\s+$/g,&apos;&apos;);
+    })
+    document.wrtieln(&apos;&quot;&apos;+&quot; neat   &quot;.trim()+&apos;&quot;&apos;)
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhangfanglan55555.github.io/2017/07/07/first/" data-id="cj4ti87250000jcprqsipiqq0" class="article-share-link">Share</a>
+      <a data-url="https://zhangfanglan55555.github.io/2017/07/07/去除首尾空格/" data-id="cj4xqv9vk0003tcpr0nxxk77o" class="article-share-link">Share</a>
       
       
     </footer>
@@ -141,7 +279,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhangfanglan55555.github.io/2017/07/07/hello-world/" data-id="cj4ti87470001jcprxzn0rmxl" class="article-share-link">Share</a>
+      <a data-url="https://zhangfanglan55555.github.io/2017/07/07/hello-world/" data-id="cj4xqv9v30000tcpr9s9cvbio" class="article-share-link">Share</a>
       
       
     </footer>
@@ -158,7 +296,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">Kategorier</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/随笔/">随笔</a></li></ul>
     </div>
@@ -173,7 +311,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Arkiv</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
     </div>
@@ -183,12 +321,24 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Siste innlegg</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2017/07/07/first/">first</a>
+            <a href="/2017/07/10/快速转化年月日&两位小数/">转年月日&amp;两位小数</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/10/取整/">取整</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/10/多个元素绑定同一事件/">多个元素绑定同一事件</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/07/去除首尾空格/">去除首尾空格</a>
           </li>
         
           <li>
